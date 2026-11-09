@@ -8,7 +8,7 @@ $Stage = Join-Path $Output ('stage-' + [guid]::NewGuid())
 try {
     $Product = Join-Path $Stage ('Insat-' + $Version)
     [IO.Directory]::CreateDirectory($Product) | Out-Null
-    foreach ($Name in @('Kur.cmd', 'Baslat.cmd', 'insat.ps1', 'README.md', 'CHANGELOG.md', 'VERSION', 'app', 'data', 'assets')) {
+    foreach ($Name in @('Kur.cmd', 'Baslat.cmd', 'insat.ps1', 'README.md', 'README.en.md', 'CHANGELOG.md', 'VERSION', 'app', 'data', 'assets')) {
         Copy-Item -LiteralPath (Join-Path $Root $Name) -Destination $Product -Recurse
     }
     $Archive = Join-Path $Output ('Insat-' + $Version + '-Windows.zip')

@@ -58,7 +58,7 @@ function Install-Insat {
     $SourceRoot = [IO.Path]::GetFullPath($SourceRoot).TrimEnd('\')
     $InstallDirectory = [IO.Path]::GetFullPath($InstallDirectory).TrimEnd('\')
     if ($SourceRoot -eq $InstallDirectory) { throw 'Kurulumu ZIP paketini çıkardığınız klasörden başlatın.' }
-    $Files = @('Baslat.cmd','insat.ps1','VERSION','README.md','CHANGELOG.md',
+    $Files = @('Baslat.cmd','insat.ps1','VERSION','README.md','README.en.md','CHANGELOG.md',
         'app/App.ps1','app/Core.ps1','app/Data.cs','app/Audio.cs','app/Install.ps1','app/Setup.ps1', 'app/Location.cs', 'app/Location.ps1',
         'app/Update.cs','app/Update.ps1','app/Update-Data.ps1','data/diyanet_locations.json',
         'data/diyanet_namaz_vakitleri_turkiye.csv', 'assets/insat.ico',

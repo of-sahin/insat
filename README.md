@@ -1,5 +1,7 @@
 ﻿# Insat v1.0.0
 
+**Türkçe** | [English](README.en.md)
+
 Windows için küçük, çevrimdışı ezan vakti ses kontrol uygulaması.
 **Python, Node.js veya ek paket indirme gerektirmez.** Windows 10/11 ile gelen
 Windows PowerShell 5.1, .NET Framework ve Windows Forms kullanılır.
